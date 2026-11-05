@@ -1,0 +1,77 @@
+name: ChatCard
+version: '${project.version}'
+main: com.andrey.chatcard.ChatCard
+api-version: '1.21.7'
+folia-supported: true
+author: Andrey
+description: A chat plugin with a stats card on every player name, formats per rank, mentions, a chat filter and staff tools.
+softdepend:
+  - PlaceholderAPI
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:2.3.21
+
+permissions:
+  chatcard.staff:
+    description: Every staff command and bypass.
+    default: op
+    children:
+      chatcard.reload: true
+      chatcard.mute: true
+      chatcard.clear: true
+      chatcard.slow: true
+      chatcard.delete: true
+      chatcard.bypass.mute: true
+      chatcard.bypass.cooldown: true
+      chatcard.bypass.filter: true
+      chatcard.bypass.clear: true
+  chatcard.reload:
+    description: Reload the config with /chat reload.
+    default: op
+  chatcard.mute:
+    description: Mute and unmute the chat with /chat mute.
+    default: op
+  chatcard.clear:
+    description: Clear the chat with /chat clear.
+    default: op
+  chatcard.slow:
+    description: Turn slow mode on and off with /chat slow.
+    default: op
+  chatcard.delete:
+    description: See the delete button before chat messages.
+    default: op
+  chatcard.bypass.mute:
+    description: Chat while the chat is muted.
+    default: op
+  chatcard.bypass.cooldown:
+    description: No cooldown and no slow mode.
+    default: op
+  chatcard.bypass.filter:
+    description: Skip the duplicate, caps and word filter.
+    default: op
+  chatcard.bypass.clear:
+    description: Keep your chat when it is cleared.
+    default: op
+  chatcard.links:
+    description: Send clickable links.
+    default: op
+  chatcard.chat.color:
+    description: Use color codes in chat.
+    default: op
+  chatcard.chat.hex:
+    description: Use hex colors in chat.
+    default: op
+  chatcard.chat.gradient:
+    description: Use gradients and rainbow in chat.
+    default: op
+  chatcard.chat.format:
+    description: Use bold, italic, underline, strikethrough and magic in chat.
+    default: op
+  chatcard.emojis:
+    description: Use emoji shortcuts in chat.
+    default: true
+  chatcard.togglechat:
+    description: Hide and show chat with /togglechat.
+    default: true
+  chatcard.togglementions:
+    description: Turn mentions on and off with /togglementions.
+    default: true

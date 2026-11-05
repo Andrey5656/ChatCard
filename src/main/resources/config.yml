@@ -1,0 +1,84 @@
+chat:
+  formats:
+    vip:
+      permission: chatcard.format.vip
+      format: "%vault_prefix%{player}&7: &#FFE400{message}"
+    default:
+      permission: ""
+      format: "%vault_prefix%{player}&7: &f{message}"
+  delete-button: "&c✖ "
+  delete-hover: "&cDelete this message"
+
+hover:
+  lines:
+    - "%luckperms_prefix%%player_name%"
+    - "&7------------"
+    - "&#00FF11$ &fMoney: &#00FF11%vault_eco_balance_formatted%"
+    - "&#A52CF5⭐ &fShards: &#A52CF5%shards%"
+    - "&#FF0000🗡 &fKills: &#FF0000%statistic_player_kills%"
+    - "&#FFE400⌚ &fPlaytime: &#FFE400%statistic_time_played%"
+    - "&#FA7600☠ &fDeaths: &#FA7600%statistic_deaths%"
+    - "&7------------"
+  click: "/msg %player_name%"
+
+join:
+  message: "&8[&a+&8] &7{player}"
+  first-join: "<gradient:#FFE400:#FA7600>Welcome</gradient> &f{player} &7to the server!"
+
+quit:
+  message: "&8[&c-&8] &7{player}"
+
+death:
+  message: "&#FA7600☠ &7{message}"
+
+mentions:
+  highlight: "&#FFE400@{name}"
+  sound: "entity.experience_orb.pickup"
+  volume: 1.0
+  pitch: 1.0
+  actionbar: "&#FFE400{player} &7mentioned you"
+
+filter:
+  cooldown: 1.0
+  duplicate-seconds: 30
+  caps:
+    min-letters: 6
+    max-percent: 60
+  words:
+    - fuck
+    - fucking
+    - fucker
+    - motherfucker
+    - shit
+    - bullshit
+    - bitch
+    - asshole
+    - bastard
+    - cunt
+    - dick
+    - pussy
+    - whore
+    - slut
+    - retard
+
+emojis:
+  ":heart:": "❤"
+  ":star:": "★"
+  ":skull:": "☠"
+  ":check:": "✔"
+  ":x:": "✖"
+  ":fire:": "🔥"
+  ":sun:": "☀"
+  ":cloud:": "☁"
+  ":snowman:": "☃"
+  ":music:": "♪"
+  ":zap:": "⚡"
+  ":smile:": "☺"
+  ":sad:": "☹"
+  ":swords:": "⚔"
+  ":peace:": "✌"
+  ":flower:": "✿"
+  ":arrow:": "➜"
+  ":infinity:": "∞"
+
+clear-lines: 100
