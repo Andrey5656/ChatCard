@@ -36,8 +36,9 @@ The default config uses these PlaceholderAPI expansions:
 /papi ecloud download Vault
 /papi ecloud download Statistic
 /papi ecloud download LuckPerms
-/papi reload
 ```
+
+Then run `/papi reload`.
 
 `%shards%` in the default hover card is left for your shards plugin. Replace it with that plugin's placeholder.
 
